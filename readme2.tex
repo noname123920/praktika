@@ -7,8 +7,11 @@
 \usepackage{amsmath}
 \usepackage{url}
 \usepackage{hyperref}
+<<<<<<< HEAD
 \usepackage{graphicx}   % Для вставки изображений
 \usepackage{float}      % Для точного позиционирования (опционально)
+=======
+>>>>>>> df8a3a762e4a89d5e3fc9651a8cde39e340d5336
 
 \geometry{top=20mm, bottom=20mm, left=30mm, right=15mm}
 \setlength{\parindent}{1.25cm}
@@ -340,12 +343,25 @@ xlabel('X (м)'); ylabel('T (^{\circ}C)');
 title_obj = title('Время t = 0.000 с');
 
 for n = 1:Nt
+<<<<<<< HEAD
     T_inner = T(2:end-1) + (alpha*dt/dx^2)*(T(3:end)-2*T(2:end-1)+T(1:end-2));
+=======
+    % Расчёт температуры во внутренних узлах
+    T_inner = T(2:end-1) + (alpha*dt/dx^2) * ...
+               (T(3:end) - 2*T(2:end-1) + T(1:end-2));
+    
+    % Сборка нового массива с учётом граничных условий
+>>>>>>> df8a3a762e4a89d5e3fc9651a8cde39e340d5336
     T = [100, T_inner, 0];
 
     set(h_plot, 'YData', T);
     set(title_obj, 'String', sprintf('Время t = %.3f с', n*dt));
+<<<<<<< HEAD
     drawnow; pause(0.01);
+=======
+    drawnow; 
+    pause(0.01);
+>>>>>>> df8a3a762e4a89d5e3fc9651a8cde39e340d5336
 end
 disp('Готово.');
 \end{verbatim}
@@ -357,6 +373,7 @@ disp('Готово.');
 \noindent В начальный момент температура везде, кроме левого конца, равна нулю. По мере расчёта тепло от нагретого левого края постепенно распространяется вправо. Со временем температура распределяется по линейному закону — от 100°C слева до 0°C справа. 
 
 \noindent Данный простой пример демонстрирует важнейший принцип, лежащий в основе современных моделей океана: непрерывная среда заменяется дискретной сеткой, а дифференциальные уравнения — разностными соотношениями. Именно так, но с учётом значительно большего числа уравнений и факторов, строятся более сложные модели, про которые я рассказывал в первой части отчёта.
+<<<<<<< HEAD
 
 \begin{figure}[h!]
     \centering
@@ -364,6 +381,8 @@ disp('Готово.');
     \caption{Распределение температуры вдоль стержня}
     \label{fig:temp_distribution}
 \end{figure}
+=======
+>>>>>>> df8a3a762e4a89d5e3fc9651a8cde39e340d5336
 
 \newpage
 
@@ -394,6 +413,7 @@ disp('Готово.');
 \end{center}
 
 \vspace{0.5cm}
+<<<<<<< HEAD
 
 \noindent 1. Франклин Б. Карта Гольфстрима / Б. Франклин, Т. Фолджер. — Лондон, 1769.
 
@@ -420,3 +440,32 @@ disp('Готово.');
 \noindent 12. Патанкар С. Численное решение задач теплопроводности, диффузии и течения жидкости. — М.: Энергоатомиздат, 1984. — 152 с.
 
 \end{document}
+=======
+
+\noindent 1. Франклин Б. Карта Гольфстрима / Б. Франклин, Т. Фолджер. — Лондон, 1769.
+
+\noindent 2. Ferrel W. An Essay on the Winds and Currents of the Ocean // Nashville Journal of Medicine and Surgery. — 1856.
+
+\noindent 3. Coriolis G. Sur les équations du mouvement relatif des systèmes de corps // Journal de l'École Polytechnique. — 1835. — Vol. 15. — P. 142–154.
+
+\noindent 4. Bryan K. A numerical method for the study of the circulation of the world ocean // Journal of Computational Physics. — 1969. — Vol. 4(3). — P. 347–376.
+
+\noindent 5. Дианский Н.А. Моделирование циркуляции океана и исследование его реакции на короткопериодные и долгопериодные атмосферные воздействия. — М.: Физматлит, 2013. — 272 с.
+
+\noindent 6. Leith AGCM [Электронный ресурс] // Wikipedia. — URL: \url{https://en.wikipedia.org/wiki/Leith_AGCM}
+
+\noindent 7. Madec G. NEMO ocean engine. Note du Pôle de modélisation. — Institut Pierre-Simon Laplace, 2008. — № 27. [Электронный ресурс]. — URL: \url{https://frouingroup.ucsd.edu/Most_recent_figs/Refs/NEMO_book_v3_3.pdf}
+
+\noindent 8. HYCOM — Hybrid Coordinate Ocean Model [Электронный ресурс]. — URL: \url{https://www.hycom.org/} 
+
+\noindent 9. Princeton Ocean Model [Электронный ресурс] // Wikipedia. — URL: \url{https://en.wikipedia.org/wiki/Princeton_Ocean_Model} 
+
+\noindent 10. Сезонные прогнозы МЗС INM-CM5 [Электронный ресурс] // Единая система моделирования Земли (ЕСМ-Земля). — URL: https://esm-ru.ru/forecasts/seasonal-forecasts/seasonal-forecasts-inmcm5/ 
+
+\noindent 11. В России создадут цифровой двойник океана [Электронный ресурс] // Известия. — URL: \url{https://iz.ru/1911963/video/v-rossii-sozdadut-tcifrovoi-dvoinik-okeana} 
+
+\noindent 12. Патанкар С. Численное решение задач теплопроводности, диффузии и течения жидкости. — М.: Энергоатомиздат, 1984. — 152 с.
+
+\end{document}
+\endinput
+>>>>>>> df8a3a762e4a89d5e3fc9651a8cde39e340d5336
