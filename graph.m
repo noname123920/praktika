@@ -10,19 +10,31 @@ figure('Color', 'w'); hold on; grid on; box on;
 xlim([0 L]); ylim([-5 105]);
 
 colors = lines(10); k = 1;
-for n = 1:Nt
-    T_inner = T(2:end-1) + (alpha*dt/dx^2)*(T(3:end)-2*T(2:end-1)+T(1:end-2));
+steady_state = false;
+n = 0;
+T_prev = T;
+
+while ~steady_state
+    n = n + 1;
+    T_inner = T(2:end-1) + (alpha*dt/dx^2) * ...
+              (T(3:end)-2*T(2:end-1)+T(1:end-2));
     T = [100, T_inner, 0];
 
     if mod(n, max(1,floor(Nt/10))) == 0
-        plot(x, T, 'Color', colors(mod(k,10)+1,:), 'LineWidth', 1.5, ...
-             'DisplayName', ['t=' num2str(n*dt,'%.2f')]);
+        plot(x, T, 'Color', colors(mod(k,10)+1,:), ...
+             'LineWidth', 1.5, 'DisplayName', ...
+             ['t=' num2str(n*dt,'%.2f')]);
         k = k+1;
     end
+
+    if max(abs(T - T_prev)) < 1e-6
+        steady_state = true;
+    end
+    T_prev = T;
 end
 
-plot(x, T, 'r-', 'LineWidth', 2.5, 'DisplayName', ['t=' num2str(T_final) ' (финиш)']);
-xlabel('X (м)'); ylabel('T (^{\circ}C)');
-title('Распространение тепла');
-legend('show', 'Location', 'northeastoutside');
+plot(x, T, 'r-', 'LineWidth', 2.5, 'DisplayName', ...
+     ['t=' num2str(n*dt,'%.2f') ' (steady state)']);
+xlabel('X (m)'); ylabel('T (C)');
+title('Heat propagation');
 hold off;
