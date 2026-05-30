@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.21)  6 MAY 2026 18:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.21)  11 MAY 2026 14:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -614,11 +614,6 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 \c@lstlisting=\count328
 
-Underfull \hbox (badness 3872) in paragraph at lines 97--101
-[]\T2A/cmr/m/n/14.4 Руководитель про-из-вод-ствен-ной
- []
-
-
 Underfull \hbox (badness 6252) in paragraph at lines 97--101
 \T2A/cmr/m/n/14.4 научно-исследовательской ра-бо-
  []
@@ -657,7 +652,7 @@ Here is how much of TeX's memory you used:
  735 hyphenation exceptions out of 8191
  75i,6n,79p,1196b,1986s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/Eduard/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/lh/lh-t2a/latt1440.600pk> </Users/Eduard/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1440.600pk> </Users/Eduard/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/lh/lh-t2a/latt1200.600pk> </usr/local/texlive/2026basic/texmf-dist/fonts/pk/ljfour/lh/lh-t2a/larm1200.600pk> </Users/Eduard/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx2074.600pk> </Users/Eduard/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1440.600pk> </usr/local/texlive/2026basic/texmf-dist/fonts/pk/ljfour/lh/lh-t2a/labx1728.600pk> </Users/Eduard/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1440.600pk></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on readme2.pdf (14 pages, 425704 bytes).
+Output written on readme2.pdf (14 pages, 425681 bytes).
 PDF statistics:
  615 PDF objects out of 1000 (max. 8388607)
  191 compressed objects within 2 object streams

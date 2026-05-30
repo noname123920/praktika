@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1778074073.73469 "/Users/Eduard/Documents/практика/readme2.tex" "readme2.pdf" "readme2" 1778074074.04721 0
-  "/Users/Eduard/Documents/практика/readme2.tex" 1778074062.1988 39007 fcd40084bd77426126348e39e770226e ""
+["pdflatex"] 1778492153.67476 "/Users/Eduard/Documents/практика/readme2.tex" "readme2.pdf" "readme2" 1778492154.00539 0
+  "/Users/Eduard/Documents/практика/readme2.tex" 1778492153.51298 38953 c489ebf3070d630b64da2788053d5d60 ""
   "/Users/Eduard/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1440.600pk" 1777292110.74174 16944 0a81f1d9a3ed1a6f2305c09bedd27fd5 ""
   "/Users/Eduard/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1440.600pk" 1776796068.08857 36828 fb1bc9d8a6de784732607c6484431579 ""
   "/Users/Eduard/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx2074.600pk" 1777291493.45357 54456 fb557b8a5e571882d20e7078def6eafd ""
@@ -112,9 +112,9 @@
   "/usr/local/texlive/2026basic/texmf-var/web2c/pdftex/pdflatex.fmt" 1776796039 3042930 d1e29761484030868f16a36086cfc57a ""
   "/usr/local/texlive/2026basic/texmf.cnf" 1772405582 628 bbc09d6d38872d53c11bb48dc9b14e88 ""
   "graph.jpg" 1778068380.91599 197715 791020876a5b082c8dd0806fd060fdd9 ""
-  "readme2.aux" 1778074073.99425 699 2dd16ceba55d624bde3c6bdf8de87479 "pdflatex"
-  "readme2.out" 1778074073.9194 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "readme2.tex" 1778074062.1988 39007 fcd40084bd77426126348e39e770226e ""
+  "readme2.aux" 1778492153.94418 699 2dd16ceba55d624bde3c6bdf8de87479 "pdflatex"
+  "readme2.out" 1778492153.85756 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "readme2.tex" 1778492153.51298 38953 c489ebf3070d630b64da2788053d5d60 ""
   (generated)
   "readme2.aux"
   "readme2.log"
